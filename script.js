@@ -25,8 +25,10 @@ console.log(l_names[randIndexL_Names], names[randIndexNames]);*/
 //console.log(names[names.length - 1]);
 //console.log(names[randIndex]);
 
+let randomAge = Math.floor(Math.random() * 60) + 1;
+let randomWeigth = Math.floor(Math.random() * 100) + 40;
 
-let women = [
+let womenW = [
     l_name = [
         'Ерохина',
         'Иванова',
@@ -48,6 +50,13 @@ let women = [
         'Нестеровна',
         'Дмитриевна'
     ],
+    uniqueAbilies = [
+        'Быстро читает',
+        'Быстро бегает',
+        'Танцует',
+        'Поет',
+        'Сочиняет стихи'
+    ]
 ]
 let men = [
     l_name = [
@@ -71,6 +80,25 @@ let men = [
         'Владиславович',
         'Андреевич',
     ],
+    uniqueAbilies = [
+        'Очень сильный',
+        'Читает рэп',
+        'Водит машину',
+        'Быстро собирается',
+        'Играет в кс'
+    ]
 ]
 
-let randomNumber = Math.floor(Math.random())
+let gender = [
+    'women',
+    'men'
+]
+
+let genders = gender[Math.floor(Math.random() * (gender.length))];
+
+if (genders === "women") {
+    let randomL_name = Math.floor(Math.random() * (womenW.l_name.length - 1));
+    let randomName = Math.floor(Math.random() * (womenW.name.length - 1));
+    let randomOtchestvo = Math.floor(Math.random() * (womenW.Otchestvo.length - 1));
+    let uniqueAbilies = Math.floor(Math.random() * (womenW.uniqueAbilies.length - 1));
+}

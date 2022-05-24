@@ -102,3 +102,4 @@ if (genders === "women") {
     let randomOtchestvo = Math.floor(Math.random() * (womenW.Otchestvo.length - 1));
     let uniqueAbilies = Math.floor(Math.random() * (womenW.uniqueAbilies.length - 1));
 }
+пщоалдвоавопо
